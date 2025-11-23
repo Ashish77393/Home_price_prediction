@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .navbar {
+        width: 90%;
+        background: #ffffff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 15px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      /* Logo */
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #007bff;
+      }
+
+      /* Menu */
+      .nav-links {
+        display: flex;
+        gap: 25px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        font-size: 18px;
+        color: #333;
+        font-weight: 500;
+      }
+
+      .nav-links a:hover {
+        color: #007bff;
+        font-weight: bolder;
+      }
+
+      /* Responsive (Mobile) */
+      @media (max-width: 500px) {
+        .nav-links {
+          gap: 15px;
+          font-size: 14px;
+          font-weight: bolder;
+        }
+
+        .logo {
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">🏠 Home Price</div>
+
+      <nav class="nav-links">
+        <a href="{% url 'Home' %}">Home</a>
+        <a href="#">About</a>
+        <a href="{% url 'Readme' %}">Readme</a>
+      </nav>
+    </header>
+  </body>
+</html>

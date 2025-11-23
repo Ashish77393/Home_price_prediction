@@ -1,0 +1,127 @@
+{% include 'Header.html' %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Readme - Home Price Prediction</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 900px;
+        margin: 40px auto;
+        background: #fff;
+        padding: 30px 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      h1,
+      h2 {
+        color: #007bff;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      h2 {
+        margin-top: 25px;
+      }
+      p,
+      li {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      ul {
+        margin-left: 20px;
+      }
+      code {
+        background: #f1f1f1;
+        padding: 2px 5px;
+        border-radius: 4px;
+        font-family: monospace;
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Home Price Prediction - Project Readme</h1>
+
+      <h2>Project Overview</h2>
+      <p>
+        This Django web application allows users to predict the estimated price
+        of a house based on property details. Users fill a form with features
+        like area, bedrooms, bathrooms, and amenities, and the system calculates
+        a predicted price using a machine learning model.
+      </p>
+
+      <h2>Technologies Used</h2>
+      <ul>
+        <li>Backend: Django (Python)</li>
+        <li>Frontend: HTML, CSS (Responsive Design)</li>
+        <li>Machine Learning: Pre-trained model (Pickle file)</li>
+        <li>Deployment: Local Django server / can be deployed to cloud</li>
+      </ul>
+
+      <h2>Features</h2>
+      <ul>
+        <li>Responsive property input form</li>
+        <li>CSRF-protected POST submission</li>
+        <li>Predicted price displayed in a clean, centered card</li>
+        <li>Navigation header with links (Home, About, Readme)</li>
+      </ul>
+
+      <h2>Installation</h2>
+      <ol>
+        <li>
+          Clone the repository:
+          <code
+            >git clone
+            https://github.com/username/home-price-prediction.git</code
+          >
+        </li>
+        <li>
+          Create and activate a virtual environment:
+          <code>python -m venv env</code>
+          <br />Windows: <code>env\Scripts\activate</code> <br />Linux/Mac:
+          <code>source env/bin/activate</code>
+        </li>
+        <li>
+          Install dependencies:
+          <code>pip install -r requirements.txt</code>
+        </li>
+        <li>
+          Run migrations:
+          <code>python manage.py migrate</code>
+        </li>
+        <li>
+          Start the server:
+          <code>python manage.py runserver</code>
+        </li>
+        <li>Open <a href="/">http://127.0.0.1:8000/</a> in your browser</li>
+      </ol>
+
+      <h2>Usage</h2>
+      <ul>
+        <li>Navigate to Home page</li>
+        <li>Fill in the Property Details Form</li>
+        <li>Click <strong>Submit</strong></li>
+        <li>View the predicted home price on the result page</li>
+      </ul>
+
+      
+      </ul>
+    </div>
+  </body>
+</html>

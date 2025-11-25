@@ -7,12 +7,13 @@
     <title>Home Price</title>
   </head>
   <body>
-    <h1>Predicted Home Price:</h1>
+    <h1>House Price Prediction</h1>
 
-    {% if price %}
-    <h2>8846454</h2>
-    {% else %}
-    <h3>No price predicted yet. Please submit the form.</h3>
+    <!-- Prediction Output -->
+    {% if predicted_price %}
+    <h2>Predicted Price: ₹ {{ predicted_price }}</h2>
     {% endif %}
+
+    <hr />
   </body>
 </html>
